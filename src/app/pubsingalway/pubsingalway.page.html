@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pubs in Galway</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+
+<ion-card-title>Here's some of the most popular pubs in the Galway City Area.</ion-card-title>
+ 
+<ul>
+  <li *ngFor="let pub of pubs">{{pubs}}</li><!--using array to generate pub names-->
+</ul>
+
+<h2><a href ="https://www.galwaytourism.ie/food-drink/pubs/">To visit a full list of pubs around galway, click this link!</a></h2>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Movies/Music About Galway</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ 
+
+<ion-card *ngFor = "let movie of MovieData">
+ <ion-card-header>
+   <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+   <ion-card-title>{{movie.Title}}</ion-card-title>
+ </ion-card-header>
+
+<!--api for generating movie data/music data for anything with the key word galway-->
+
+ <ion-card-content></ion-card-content>
+</ion-card>
+
+ 
+</ion-content>

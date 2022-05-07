@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>weather status</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+Have a look outside and tell us the weather!<br>
+<br>  <ion-title>Current status is {{myStatus}}</ion-title>
+<ion-list>
+<ion-radio-group [(ngModel)]="myStatus">
+<ion-item>
+<ion-label>Sunny</ion-label>
+<ion-radio value="Sunny"></ion-radio>
+</ion-item>
+<ion-item>
+<ion-label>Raining</ion-label>
+<ion-radio value="Raining"></ion-radio>
+</ion-item>
+<ion-item>
+<ion-label>Cloudy</ion-label>
+<ion-radio value="Cloudy" ></ion-radio>
+</ion-item>
+<ion-item>
+<ion-label>Snowy</ion-label>
+<ion-radio value="Snowing" ></ion-radio>
+</ion-item>
+</ion-radio-group>
+
+</ion-list>
+<ion-button (click)="saveStatus()">Save</ion-button>
+</ion-content>
+<!-- allows user to set weather for galway, plan would be for app manager to set the weather on the daily basis.-->

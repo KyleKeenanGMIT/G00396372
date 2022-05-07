@@ -1,0 +1,85 @@
+ion-content{
+    --ion-background-color:#fff
+}
+//bacgkround color of white for the content.
+
+.background-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: url(../.././/assets/spanisharch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    flex-direction: column;
+    justify-content: center;
+
+    //css for the background image and text to make it center and not overlap
+
+
+
+}
+
+ion-card{
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+
+    //removes background image for galway tourism text.
+
+    //centers the items on the screen.
+}
+
+img{
+    height: 7rem;
+    width: 14rem;
+    margin-top: 119px;
+    //setting height and width for img.
+}
+
+ion-card-title{
+    font-size: 40px;
+    color: lightblue;
+    font-weight: 400;
+
+
+
+}
+
+
+ion-card-content{
+    margin-top: 20px;
+
+    //how far down the button will appear from the top of the ion button box.
+
+}
+
+
+ion-button{
+    width: 180px;
+    height: 60px;
+    --border-radius: 40px;
+    --background: lightblue;
+    color: #fff;
+    font-weight: 400;
+    text-transform: none;
+    
+
+    //wdith height and border radius for the login button
+}
+
+
+
+@media screen and (min-width:500px){
+
+    .background-filter{
+        height: 100%;
+        width: 100%;
+        display:flex;
+        
+        flex-direction: column;
+        justify-content: center;
+
+        //setting the minimum width the app will show in for a device. this will help the app look correct on every device
+    }
+}

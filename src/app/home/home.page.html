@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+ Mobile Applications Development Project G00396372
+    </ion-title>
+  </ion-toolbar>
+
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse = "condense">
+    <ion-toolbar>
+      <ion-title size = "large">Blank</ion-title>
+
+
+
+    </ion-toolbar>
+
+
+  </ion-header>
+
+<ul>
+<!--h1 text in unordered list.-->
+    <h1>Hi Welcome to my Tourism in Galway App! Here's the current weather: {{myStatus}}</h1><br/>
+
+   
+    <!-- br to move text down with buttons that bring to another html page.-->
+    <br/><br/>
+    <ion-button [routerLink] = "['/weatherstatus']" routerDirection = "forward">Set Weather Status</ion-button>
+    <ion-button [routerLink] = "['/movies']" routerDirection = "forward">Movies and Songs about Galway</ion-button>
+    <ion-button [routerLink] = "['/events']" routerDirection = "forward">Events</ion-button>
+    <ion-button [routerLink] = "['/pubs']" routerDirection = "forward">Pubs</ion-button>
+   
+
+ </ul>
+
+
+  
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-content>
+
+
+  <div class="background-img">
+    <div class =background-filter>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+  SIGN UP
+    </ion-card-title>
+    <ion-card-subtitle>
+      Explore Galway with us, <a href="#">Sign up!</a> 
+    </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <ion-input placeholder="Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Phone Number"></ion-input>
+      <!-- placeholders for customers data-->
+    </ion-item>
+
+    
+
+    <div class="button-login"><!-- triggers signup user method which brings user back to login page.-->
+      <ion-button (click)="SignUpUser()">Sign Up</ion-button>
+     <span>Already have an account? <a href ="http://localhost:8100/login">Sign in!</a></span> 
+    </div>
+  </ion-card-content>
+</ion-card>
+
+    </div>
+  </div>
+
+</ion-content>
